@@ -1,0 +1,31 @@
+Test_ID,Scenario,Category,Priority,Browser,Viewport,Expected_Result,Actual_Result,Status
+REG-001,Open home page and verify hero slider,Positive,High,Chromium 145,Desktop 1440x900,Hero section visible and no layout break,As expected,Pass
+REG-002,Navigate to Products via header,Positive,High,Chromium 145,Desktop 1440x900,Products page opens,As expected,Pass
+REG-003,Open first product detail page,Positive,High,Chromium 145,Desktop 1440x900,Product details display name/category/price,As expected,Pass
+REG-004,Search existing product keyword,Positive,High,Chromium 145,Desktop 1440x900,Matching search results shown,As expected,Pass
+REG-005,Search non-existing product keyword,Negative,Medium,Chromium 145,Desktop 1440x900,No matching product cards shown,As expected,Pass
+REG-006,Add product to cart from list page,Positive,High,Chromium 145,Desktop 1440x900,Product added to cart modal,As expected,Pass
+REG-007,Add product to cart from detail page,Positive,High,Chromium 145,Desktop 1440x900,Product appears in cart table,As expected,Pass
+REG-008,Update quantity to boundary value 1,Boundary,High,Chromium 145,Desktop 1440x900,Quantity in cart equals 1,As expected,Pass
+REG-009,Update quantity to value 2,Boundary,High,Chromium 145,Desktop 1440x900,Quantity in cart equals 2,As expected,Pass
+REG-010,Proceed to cart and verify subtotal row,Positive,High,Chromium 145,Desktop 1440x900,Subtotal row visible and numeric,As expected,Pass
+REG-011,Open Test Cases page,Positive,Medium,Chromium 145,Desktop 1440x900,Test case list panel loads,As expected,Pass
+REG-012,Open API Testing page,Positive,Low,Chromium 145,Desktop 1440x900,API testing info page opens,As expected,Pass
+REG-013,Open Video Tutorials page,Positive,Low,Chromium 145,Desktop 1440x900,Tutorial page opens,As expected,Pass
+REG-014,Open Contact Us and enter valid data,Positive,Medium,Chromium 145,Desktop 1440x900,Form accepts input values,As expected,Pass
+REG-015,Contact form submit with missing email,Negative,High,Chromium 145,Desktop 1440x900,Client-side email validation blocks submit,As expected,Pass
+REG-016,Contact form submit with missing message,Negative,Medium,Chromium 145,Desktop 1440x900,Required field validation blocks submit,As expected,Pass
+REG-017,Login with invalid credentials,Negative,High,Chromium 145,Desktop 1440x900,Error message for invalid login shown,As expected,Pass
+REG-018,Login with malformed email format,Negative,High,Chromium 145,Desktop 1440x900,HTML5 email validation blocks submit,As expected,Pass
+REG-019,Signup form with blank name,Negative,Medium,Chromium 145,Desktop 1440x900,Required validation shown,As expected,Pass
+REG-020,Subscription with valid email,Positive,Medium,Chromium 145,Desktop 1440x900,Subscription success message shown,As expected,Pass
+REG-021,Subscription with invalid email format,Negative,Medium,Chromium 145,Desktop 1440x900,Email format validation blocks submit,As expected,Pass
+REG-022,Scroll to footer and verify elements,Positive,Low,Chromium 145,Desktop 1440x900,Footer text/links visible,As expected,Pass
+REG-023,Cross-browser sanity - Products page,Cross-browser,High,Firefox 146,Desktop 1366x768,Products render and usable in Firefox,As expected,Pass
+REG-024,Cross-browser sanity - Cart flow,Cross-browser,High,Firefox 146,Desktop 1366x768,Add-to-cart and cart review work in Firefox,As expected,Pass
+REG-025,Cross-browser sanity - Contact page,Cross-browser,Medium,Firefox 146,Desktop 1366x768,Contact form renders/validates in Firefox,As expected,Pass
+REG-026,Responsive check - home page layout,Responsive,High,Chromium 145,Mobile 390x844,Blocks align without overlap,As expected,Pass
+REG-027,Responsive check - products grid layout,Responsive,High,Chromium 145,Mobile 390x844,Product cards readable and tappable,As expected,Pass
+REG-028,Responsive check - cart layout,Responsive,Medium,Chromium 145,Mobile 390x844,Cart rows visible without critical cut-off,As expected,Pass
+REG-029,Boundary search string length 1 char,Boundary,Medium,Chromium 145,Desktop 1440x900,Search executes with stable UI response,As expected,Pass
+REG-030,Boundary search string length 50 chars,Boundary,Medium,Chromium 145,Desktop 1440x900,System handles long query without crash,As expected,Pass

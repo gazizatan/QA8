@@ -1,0 +1,13 @@
+Test_ID,Check,Type,Priority,Browser,Viewport,Expected_Result,Actual_Result,Status
+SMK-001,Open home page,Positive,High,Chromium 145,Desktop 1440x900,Home page loads with title and header,Loaded successfully,Pass
+SMK-002,Verify top navigation links,Positive,High,Chromium 145,Desktop 1440x900,Home/Products/Cart/Contact/Test Cases links visible,All visible,Pass
+SMK-003,Open Products page,Positive,High,Chromium 145,Desktop 1440x900,All Products heading and list displayed,Displayed,Pass
+SMK-004,Open Product Details page,Positive,High,Chromium 145,Desktop 1440x900,Product details page opens with product info,Displayed,Pass
+SMK-005,Search product from Products page,Positive,High,Chromium 145,Desktop 1440x900,Searched Products section appears with matching items,Displayed,Pass
+SMK-006,Add one product to cart,Positive,High,Chromium 145,Desktop 1440x900,Product appears in cart,Product present in cart,Pass
+SMK-007,Open Cart page directly,Positive,High,Chromium 145,Desktop 1440x900,Cart page opens without errors,Opened successfully,Pass
+SMK-008,Open Contact Us page,Positive,Medium,Chromium 145,Desktop 1440x900,Contact form visible,Visible,Pass
+SMK-009,Open Login/Signup page,Positive,Medium,Chromium 145,Desktop 1440x900,Login and Signup blocks visible,Visible,Pass
+SMK-010,Footer subscription with valid email,Positive,Medium,Chromium 145,Desktop 1440x900,Success subscription message shown,Shown,Pass
+SMK-011,Cross-browser sanity - Home page,Positive,High,Firefox 146,Desktop 1366x768,Home page renders correctly,Rendered correctly,Pass
+SMK-012,Responsive sanity - mobile home layout,Positive,High,Chromium 145,Mobile 390x844,Navigation and main blocks readable on mobile,Readable and functional,Pass

@@ -1,0 +1,26 @@
+{
+  "name": "qa8",
+  "version": "1.0.0",
+  "description": "Assignment 8 - Full Web Application Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/smoke.spec.ts",
+    "test:regression": "playwright test tests/regression.spec.ts tests/negative.spec.ts",
+    "test:smoke:grep": "playwright test --grep \"\\[SMOKE\\]\"",
+    "test:reg:grep": "playwright test --grep \"\\[REG\\]\"",
+    "test:neg:grep": "playwright test --grep \"\\[NEG\\]\"",
+    "test:evidence": "playwright test | tee artifacts/execution.log",
+    "test:report": "playwright show-report artifacts/html-report"
+  },
+  "keywords": [
+    "qa",
+    "playwright",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
